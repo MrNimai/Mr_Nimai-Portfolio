@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Nimai Dev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" id="siteHeader">
+        <div class="container bar">
+            <a href="index.html" class="brand">
+                <span class="brand-mark"><img src="My Logo.png" alt="Nimai Dev logo"></span>
+                <span class="brand-copy"><small>Portfolio</small>Mr_Nimai</span>
+            </a>
+            <nav class="nav" aria-label="Primary navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="service.html" class="nav-link">Services</a>
+                <a href="Portfolio.html" class="nav-link active">Portfolio</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <a href="service.html" class="button secondary small">My Services</a>
+                <a href="contact.html" class="button primary small">Hire Me</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-expanded="false" aria-controls="mobileNavPanel" aria-label="Open navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-nav-panel" id="mobileNavPanel">
+            <div class="container mobile-nav-inner">
+                <nav class="mobile-nav-links" aria-label="Mobile navigation">
+                    <a href="index.html" class="mobile-nav-link">Home</a>
+                    <a href="about.html" class="mobile-nav-link">About</a>
+                    <a href="service.html" class="mobile-nav-link">Services</a>
+                    <a href="Portfolio.html" class="mobile-nav-link active">Portfolio</a>
+                    <a href="contact.html" class="mobile-nav-link">Contact</a>
+                </nav>
+                <div class="mobile-nav-actions">
+                    <a href="service.html" class="button secondary">My Services</a>
+                    <a href="contact.html" class="button primary">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="page-shell reveal">
+                    <div class="eyebrow">Portfolio</div>
+                    <h1 class="page-title">Selected work shaped around <span class="gradient-text">clean interfaces, useful features, and modern presentation.</span></h1>
+                    <p class="lead">Browse projects by category. This page now reads project data directly from the codebase so you can update it cleanly with Git.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="filter-buttons reveal" id="filterButtons">
+                    <button class="filter-btn active" type="button" data-filter="all">All Projects</button>
+                    <button class="filter-btn" type="button" data-filter="web-apps">Web Apps</button>
+                    <button class="filter-btn" type="button" data-filter="dashboards">Dashboards</button>
+                    <button class="filter-btn" type="button" data-filter="ecommerce">E-Commerce</button>
+                    <button class="filter-btn" type="button" data-filter="tools">Tools</button>
+                    <button class="filter-btn" type="button" data-filter="others">Others</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top:0;">
+            <div class="container">
+                <div class="projects-grid" id="projectsGrid"></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container stats-grid">
+                <div class="stat-card reveal">
+                    <h3 id="projectCount">0</h3>
+                    <p>Projects available</p>
+                </div>
+                <div class="stat-card reveal">
+                    <h3>15+</h3>
+                    <p>Happy clients</p>
+                </div>
+                <div class="stat-card reveal">
+                    <h3>2+</h3>
+                    <p>Years building</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta-strip">
+            <div class="container">
+                <div class="cta-inner reveal">
+                    <div>
+                        <h3>Like the direction of this work?</h3>
+                        <p class="spacer-top">I can build a similar level of polish for your website, portfolio, or custom product.</p>
+                    </div>
+                    <a href="contact.html" class="button primary">Start a Conversation</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="brand">
+                    <span class="brand-mark"><img src="My Logo.png" alt="Nimai Dev logo"></span>
+                    <span class="brand-copy"><small>Portfolio</small>Mr_Nimai</span>
+                </a>
+                <p class="spacer-top footer-copy">Project showcase for frontend interfaces and automation-supported web experiences.</p>
+            </div>
+            <div>
+                <h4>Pages</h4>
+                <a href="index.html">Home</a><br>
+                <a href="about.html">About</a><br>
+                <a href="service.html">Services</a>
+            </div>
+            <div>
+                <h4>Project Types</h4>
+                <span>Dashboards</span><br>
+                <span>Landing Pages</span><br>
+                <span>Tools and Apps</span>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <a href="mailto:contact@nimaidev.com">contact@nimaidev.com</a><br>
+                <a href="tel:+8801683015858">+8801683015858</a><br>
+                <span>Chittagong, Bangladesh</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="projects-data.js"></script>
+    <script src="portfolio-script.js"></script>
+</body>
+</html>

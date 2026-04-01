@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Nimai Dev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" id="siteHeader">
+        <div class="container bar">
+            <a href="index.html" class="brand">
+                <span class="brand-mark"><img src="My Logo.png" alt="Nimai Dev logo"></span>
+                <span class="brand-copy"><small>Portfolio</small>Mr_Nimai</span>
+            </a>
+            <nav class="nav" aria-label="Primary navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="service.html" class="nav-link">Services</a>
+                <a href="Portfolio.html" class="nav-link">Portfolio</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <a href="Portfolio.html" class="button secondary small">See Projects</a>
+                <a href="contact.html" class="button primary small">Hire Me</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-expanded="false" aria-controls="mobileNavPanel" aria-label="Open navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-nav-panel" id="mobileNavPanel">
+            <div class="container mobile-nav-inner">
+                <nav class="mobile-nav-links" aria-label="Mobile navigation">
+                    <a href="index.html" class="mobile-nav-link">Home</a>
+                    <a href="about.html" class="mobile-nav-link">About</a>
+                    <a href="service.html" class="mobile-nav-link">Services</a>
+                    <a href="Portfolio.html" class="mobile-nav-link">Portfolio</a>
+                    <a href="contact.html" class="mobile-nav-link active">Contact</a>
+                </nav>
+                <div class="mobile-nav-actions">
+                    <a href="Portfolio.html" class="button secondary">See Projects</a>
+                    <a href="contact.html" class="button primary">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="page-shell reveal">
+                    <div class="eyebrow">Contact</div>
+                    <h1 class="page-title">Let's talk about your <span class="gradient-text">website, redesign, or automation idea.</span></h1>
+                    <p class="lead">If you already know what you need or just want help shaping the idea, send me a message and I'll get back to you.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container contact-grid">
+                <article class="contact-card reveal">
+                    <h2>Send me a message</h2>
+                    <p class="section-copy spacer-top">Use the form below and I'll usually reply within 24 hours.</p>
+                    <form id="contactForm" class="contact-form spacer-top" action="https://formspree.io/f/xykpavkz" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="button primary">Send Message</button>
+                    </form>
+                </article>
+                <article class="contact-card reveal">
+                    <div class="eyebrow">Details</div>
+                    <h2>Direct contact information</h2>
+                    <div class="info-item spacer-top">
+                        <h3>Email</h3>
+                        <p><a href="mailto:contact@nimaidev.com">contact@nimaidev.com</a></p>
+                    </div>
+                    <div class="info-item spacer-top">
+                        <h3>Phone</h3>
+                        <p><a href="tel:+8801683015858">+8801683015858</a></p>
+                    </div>
+                    <div class="info-item spacer-top">
+                        <h3>Location</h3>
+                        <p>Chittagong, Bangladesh</p>
+                    </div>
+                    <div class="info-item spacer-top">
+                        <h3>Response time</h3>
+                        <p>I typically respond within one day.</p>
+                    </div>
+                    <div class="info-item spacer-top">
+                        <h3>Best for</h3>
+                        <p>Portfolio websites, redesigns, landing pages, dashboards, and AI automation projects.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div class="eyebrow">FAQ</div>
+                    <h2>Before you message me</h2>
+                    <p>These quick answers may help you understand how I usually work.</p>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-header" tabindex="0">
+                        <h3>Do you work on small projects too?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-content">
+                        <p>Yes. I can help with both full builds and smaller redesign or improvement tasks.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal spacer-top">
+                    <div class="faq-header" tabindex="0">
+                        <h3>Can you redesign an existing portfolio or website?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-content">
+                        <p>Yes. Redesigning existing sites is one of the easiest ways to improve trust and presentation quickly.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal spacer-top">
+                    <div class="faq-header" tabindex="0">
+                        <h3>Do you help after launch?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-content">
+                        <p>Yes. I can handle updates, fixes, and additional improvements after the initial delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="brand">
+                    <span class="brand-mark"><img src="My Logo.png" alt="Nimai Dev logo"></span>
+                    <span class="brand-copy"><small>Portfolio</small>Mr_Nimai</span>
+                </a>
+                <p class="spacer-top footer-copy">Reach out if you need a cleaner portfolio, a stronger landing page, or a custom web solution with modern styling.</p>
+            </div>
+            <div>
+                <h4>Pages</h4>
+                <a href="index.html">Home</a><br>
+                <a href="about.html">About</a><br>
+                <a href="service.html">Services</a>
+            </div>
+            <div>
+                <h4>Work</h4>
+                <a href="Portfolio.html">Portfolio</a><br>
+                <span>Frontend Development</span><br>
+                <span>Automation Setup</span>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <a href="mailto:contact@nimaidev.com">contact@nimaidev.com</a><br>
+                <a href="tel:+8801683015858">+8801683015858</a><br>
+                <span>Chittagong, Bangladesh</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
