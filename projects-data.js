@@ -9,5 +9,14 @@ window.PORTFOLIO_PROJECTS = [
         image: "Card.png",
         link: " https://mrnimai.github.io/Likhon-Datta-Portfolio/",
         tags: ["HTML", "CSS", "JavaScript"]
+    },
+     {
+        id: 2,
+        title: "Web Developers Portfolio",
+        description: "It's a Portfolio for web developers ",
+        category: "Web App",
+        image: "Card2.png",
+        link: " https://mrnimai.github.io/Mr_Nimai-Portfolio/",
+        tags: ["HTML", "CSS", "JavaScript"]
     }
 ];
