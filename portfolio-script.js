@@ -11,6 +11,15 @@ class PortfolioDisplay {
         this.renderProjects();
     }
 
+    normalizeCategory(value) {
+        return String(value || "")
+            .trim()
+            .toLowerCase()
+            .replace(/&/g, "and")
+            .replace(/[^a-z0-9]+/g, "-")
+            .replace(/^-+|-+$/g, "");
+    }
+
     updateProjectCount() {
         if (this.projectCountEl) {
             this.projectCountEl.textContent = String(this.allProjects.length);
@@ -33,7 +42,7 @@ class PortfolioDisplay {
             return this.allProjects;
         }
 
-        return this.allProjects.filter((project) => project.category === this.currentFilter);
+        return this.allProjects.filter((project) => this.normalizeCategory(project.category) === this.currentFilter);
     }
 
     renderProjects() {
@@ -56,7 +65,7 @@ class PortfolioDisplay {
                 <div class="project-image">
                     <img src="${project.image}" alt="${project.title}">
                     <div class="project-overlay">
-                        ${project.link ? `<a href="${project.link}" target="_blank" rel="noopener noreferrer" class="button primary small">View Project</a>` : `<a href="contact.html" class="button primary small">Request Demo</a>`}
+                        ${project.link ? `<a href="${String(project.link).trim()}" target="_blank" rel="noopener noreferrer" class="button primary small">View Project</a>` : `<a href="contact.html" class="button primary small">Request Demo</a>`}
                     </div>
                 </div>
                 <div class="project-info">

@@ -5,18 +5,18 @@ window.PORTFOLIO_PROJECTS = [
         id: 1,
         title: "Film Maker Portfolio",
         description: "It's a Film Maker Portfolio ",
-        category: "Web Apps",
+        category: "web-apps",
         image: "Card.png",
-        link: " https://mrnimai.github.io/Likhon-Datta-Portfolio/",
+        link: "https://mrnimai.github.io/Likhon-Datta-Portfolio/",
         tags: ["HTML", "CSS", "JavaScript"]
     },
      {
         id: 2,
         title: "Web Developers Portfolio",
         description: "It's a Portfolio for web developers ",
-        category: "Web App",
+        category: "web-apps",
         image: "Card2.png",
-        link: " https://mrnimai.github.io/Mr_Nimai-Portfolio/",
+        link: "https://mrnimai.github.io/Mr_Nimai-Portfolio/",
         tags: ["HTML", "CSS", "JavaScript"]
     }
 ];
